@@ -1,0 +1,49 @@
+{
+  "name": "thought-map",
+  "version": "0.0.1",
+  "description": "thought map helps you keep your thoughts organized virtually",
+  "main": "./app/server.js",
+  "scripts": {
+    "build:dev": "webpack -d",
+    "build": "webpack -p",
+    "build:watch": "webpack --watch",
+    "start:app": "node ./app/server.js",
+    "start:api": "node ./api/server.js",
+    "start:all:dev": "nodemon ./api/server.js | nodemon ./app/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacharyhill/hrsf92-mvp.git"
+  },
+  "author": "zachary hill <zach@zacharyhill.xyz>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zacharyhill/hrsf92-mvp/issues"
+  },
+  "homepage": "https://github.com/zacharyhill/hrsf92-mvp#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.1",
+    "react": "^16.3.2",
+    "react-contextmenu": "^2.9.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-rnd": "^7.4.0",
+    "react-router-3": "^3.2.2",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^3.12.0",
+    "webpack-cli": "^2.1.3"
+  }
+}
